@@ -120,7 +120,7 @@ by file `/modified_files/hf_transformers.py`
 by file `/modified_files/modeling_bert.py`
 
 * Use the config file: `/config_files/config_custom_PhoBERT.yml`
-* For testing: run following command:
+* For testing:
 ```shell script
 (chatbot-env)$ cd MeeylandBot
 (chatbot-env)$ rasa train nlu -c ../config_files/config_custom_PhoBERT.yml
