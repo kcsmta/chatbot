@@ -8,9 +8,10 @@
 * [Introduction](#introduction)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Contact](#contact)
 
 ## Introduction
-Rasa + pyvi, underthesea (tokenizer for Vietnamese) + PhoBERT (pretrained model for Vietnamese based on RoBERTa)
+[Rasa](https://rasa.com/) + pyvi, underthesea (tokenizer for Vietnamese) + PhoBERT (pretrained model for Vietnamese based on RoBERTa)
 
 ## Installation
 * Python 3.5+ is required.
@@ -18,33 +19,46 @@ Rasa + pyvi, underthesea (tokenizer for Vietnamese) + PhoBERT (pretrained model 
 **1. Clone project**
 
 ``` shell script
-git clone https://github.com/kcsmta/chatbot.git
+$ git clone https://github.com/kcsmta/chatbot.git
 ```
 
 **2. Install pip3 first**
 ```shell script
-sudo apt-get install python3-pip
+$ sudo apt-get install python3-pip
 ```
 
 **3. Install virtualenv using pip3**
 ```shell script
-sudo pip3 install virtualenv
+$ sudo pip3 install virtualenv
 ```
 
 **4. Create virtual environment**
 ```shell script
-virtualenv -p /usr/bin/python3.6 chatbot-env
+$ virtualenv -p /usr/bin/python3.6 chatbot-env
 ```
 
 **5. Active virtual environment**
 ```shell script
-source chatbot-env/bin/activate 
+$ source chatbot-env/bin/activate 
 ```
 
-**6. Install requirement packages**
+**6. Install requirement packages, run following command**
 ```shell script
-pip install -r requirements.txt
+$ pip install rasa
+$ pip install rasa[spacy]
+$ python -m spacy download en_core_web_md
+$ python -m spacy link en_core_web_md en
+$ pip install git+https://github.com/mit-nlp/MITIE.git
+$ pip install rasa[mitie]
+$ pip install rasa[transformers]
+
+# For tokenizers
+$ pip install pyvi
+$ pip install underthesea
 ```
 
 ## Usage
 
+## Contact
+Authors: \
+Khanh Duy Tung Nguyen : tungkhanh@lqdtu.edu.vn
