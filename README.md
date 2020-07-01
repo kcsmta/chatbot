@@ -51,6 +51,9 @@ $ source chatbot-env/bin/activate
 (chatbot-env)$ pip install git+https://github.com/mit-nlp/MITIE.git
 (chatbot-env)$ pip install rasa[mitie]
 (chatbot-env)$ pip install rasa[transformers]
+(chatbot-env)$ pip install torch
+(chatbot-env)$ pip install fairseq
+(chatbot-env)$ pip install fastBPE
 # For tokenizers
 (chatbot-env)$ pip install pyvi
 (chatbot-env)$ pip install underthesea
@@ -90,11 +93,36 @@ and run following command:
 ```
 
 **8. To use `PhoBERT` as custom embedding in Rasa**
-* Replace file `chatbot-env/lib/python3.6/site-packages/rasa/nlu/registry.py` by file 
-`/modified_files/registry.py`
+* Create folder contains PhoBERT model and move into it:
+```shell script
+(chatbot-env)$ cd chatbot
+(chatbot-env)$ mkdir PhoBERT_models
+(chatbot-env)$ cd PhoBERT_models
+```
+* Download `PhoBERT-base` model:
+```shell script
+(chatbot-env)$ wget https://public.vinai.io/PhoBERT_base_transformers.tar.gz
+(chatbot-env)$ tar -xzvf PhoBERT_base_transformers.tar.gz
+```
+* Download `PhoBERT-large` model:
+```shell script
+(chatbot-env)$ wget https://public.vinai.io/PhoBERT_large_transformers.tar.gz
+(chatbot-env)$ tar -xzvf PhoBERT_large_transformers.tar.gz
+```
+* Replace file `chatbot-env/lib/python3.6/site-packages/rasa/nlu/utils/hugging_face/hf_transformers.py` 
+by file `/modified_files/hf_transformers.py`
+* **Important Note:** Open file `hf_transformers.py` and modify: `/Absolute-path-to/PhoBERT_base_transformers/config.json`,
+`/Absolute-path-to/PhoBERT_base_transformers/model.bin`,
+`/Absolute-path-to/PhoBERT_base_transformers/bpe.codes`, and
+`/Absolute-path-to/PhoBERT_base_transformers/dict.txt`
+
+* Replace file `chatbot-env/lib/python3.6/site-packages/transformers/modeling_bert.py` 
+by file `/modified_files/modeling_bert.py`
+
 * Use the config file: `/config_files/config_custom_PhoBERT.yml`
 * For testing: run following command:
 ```shell script
+(chatbot-env)$ cd MeeylandBot
 (chatbot-env)$ rasa train nlu -c ../config_files/config_custom_PhoBERT.yml
 ```
 
