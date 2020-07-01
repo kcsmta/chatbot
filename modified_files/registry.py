@@ -40,7 +40,6 @@ from rasa.nlu.tokenizers.spacy_tokenizer import SpacyTokenizer
 from rasa.nlu.tokenizers.whitespace_tokenizer import WhitespaceTokenizer
 from rasa.nlu.tokenizers.vi_tokenizer_underthesea import VietnameseTokenizer_underthesea
 from rasa.nlu.tokenizers.vi_tokenizer_pyvi import VietnameseTokenizer_pyvi
-from rasa.nlu.tokenizers.vi_tokenizer_VNcoreNLP import VietnameseTokenizer_VNcoreNLP
 from rasa.nlu.tokenizers.lm_tokenizer import LanguageModelTokenizer
 from rasa.nlu.utils.mitie_utils import MitieNLP
 from rasa.nlu.utils.spacy_utils import SpacyNLP
@@ -72,7 +71,6 @@ component_classes = [
     WhitespaceTokenizer,
     VietnameseTokenizer_underthesea, #Vietnamese tokenizer
     VietnameseTokenizer_pyvi,
-    VietnameseTokenizer_VNcoreNLP,
     ConveRTTokenizer,
     JiebaTokenizer,
     LanguageModelTokenizer,

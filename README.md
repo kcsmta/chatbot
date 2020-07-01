@@ -42,7 +42,7 @@ $ virtualenv -p /usr/bin/python3.6 chatbot-env
 $ source chatbot-env/bin/activate 
 ```
 
-**6. Install requirement packages, run following command**
+**6. Install requirement packages by running following command**
 ```shell script
 (chatbot-env)$ pip install rasa
 (chatbot-env)$ pip install rasa[spacy]
@@ -51,7 +51,6 @@ $ source chatbot-env/bin/activate
 (chatbot-env)$ pip install git+https://github.com/mit-nlp/MITIE.git
 (chatbot-env)$ pip install rasa[mitie]
 (chatbot-env)$ pip install rasa[transformers]
-
 # For tokenizers
 (chatbot-env)$ pip install pyvi
 (chatbot-env)$ pip install underthesea
@@ -82,12 +81,25 @@ VietnameseTokenizer_pyvi
 
 * Use the config file: `/config_files/config_custom_tokenizer.yml`
 
-## Usage
+* For testing\
 **Create rasa project**: Create folder contains project (e.g. MeeylandBot). Move to the folder 
 and run following command:
 ```shell script
 (chatbot-env)$ rasa init --no-prompt
+(chatbot-env)$ rasa train nlu -c ../config_files/config_custom_tokenizer.yml
 ```
+
+**8. To use `PhoBERT` as custom embedding in Rasa**
+* Replace file `chatbot-env/lib/python3.6/site-packages/rasa/nlu/registry.py` by file 
+`/modified_files/registry.py`
+* Use the config file: `/config_files/config_custom_PhoBERT.yml`
+* For testing: run following command:
+```shell script
+(chatbot-env)$ rasa train nlu -c ../config_files/config_custom_PhoBERT.yml
+```
+
+## Usage
+
 
 ## Contact
 Authors: \
