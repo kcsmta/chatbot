@@ -1,0 +1,1125 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "chào"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "xin chào"
+      },
+      {
+        "intent": "greet",
+        "text": "hey you"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "thank",
+        "text": "cảm ơn"
+      },
+      {
+        "intent": "thank",
+        "text": "cam on"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "thank"
+      },
+      {
+        "intent": "thank",
+        "text": "hihi, cảm ơn"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "tạm biệt"
+      },
+      {
+        "intent": "ask_cost",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 30,
+            "end": 39,
+            "value": "Ngã Tư Sở",
+            "entity": "address"
+          },
+          {
+            "start": 44,
+            "end": 46,
+            "value": "90",
+            "entity": "area"
+          }
+        ],
+        "text": "Cho mình hỏi giá chung cư gần Ngã Tư Sở tầm 90 m2 ạ?"
+      },
+      {
+        "intent": "ask_cost",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 27,
+            "end": 41,
+            "value": "Hoàng Hoa Thám",
+            "entity": "address"
+          },
+          {
+            "start": 45,
+            "end": 47,
+            "value": "80",
+            "entity": "area"
+          }
+        ],
+        "text": "mình muốn mua chung cư gần Hoàng Hoa Thám cỡ 80 m2 thì giá như nào ạ?"
+      },
+      {
+        "intent": "ask_cost",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 13,
+            "end": 24,
+            "value": "Đại Cồ Việt",
+            "entity": "address"
+          }
+        ],
+        "text": "Chung cư gần Đại Cồ Việt thì giá tầm bao nhiêu?"
+      },
+      {
+        "intent": "ask_cost",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "biệt thự",
+            "entity": "estate_type"
+          },
+          {
+            "start": 21,
+            "end": 33,
+            "value": "Trường Chinh",
+            "entity": "address"
+          }
+        ],
+        "text": "cho hỏi biệt thự gần Trường Chinh có đắt không?"
+      },
+      {
+        "intent": "ask_cost",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "Biệt thự liền kề",
+            "entity": "estate_type"
+          },
+          {
+            "start": 21,
+            "end": 31,
+            "value": "thái thịnh",
+            "entity": "address"
+          }
+        ],
+        "text": "Biệt thự liền kề gần thái thịnh giá tầm nhiêu vậy?"
+      },
+      {
+        "intent": "ask_cost",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Nhà đất",
+            "entity": "estate_type"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "value": "50",
+            "entity": "area"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "value": "Thái Hà",
+            "entity": "address"
+          }
+        ],
+        "text": "Nhà đất diện tích tầm 50 m2 ở Thái Hà có giá tầm bao nhiêu vậy?"
+      },
+      {
+        "intent": "ask_cost",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 9,
+            "end": 18,
+            "value": "ngã tư sở",
+            "entity": "address"
+          },
+          {
+            "start": 46,
+            "end": 48,
+            "value": "45",
+            "entity": "area"
+          }
+        ],
+        "text": "chung cư ngã tư sở có đắt không ad, diện tích 45 m2 nh?"
+      },
+      {
+        "intent": "ask_cost",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 28,
+            "end": 37,
+            "value": "Phạm Hùng",
+            "entity": "address"
+          }
+        ],
+        "text": "mình định mua chung cư đoạn Phạm Hùng, ko biết đắt không nhỉ?"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 14,
+            "end": 17,
+            "value": "nhà",
+            "entity": "estate_type"
+          },
+          {
+            "start": 20,
+            "end": 28,
+            "value": "cầu giấy",
+            "entity": "address"
+          }
+        ],
+        "text": "mình muốn mua nhà ở cầu giấy"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "biệt thự",
+            "entity": "estate_type"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "value": "Ngã Tư Sở",
+            "entity": "address"
+          },
+          {
+            "start": 54,
+            "end": 59,
+            "value": "10 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "mình muốn mua một căn biệt thự gần Ngã Tư Sở, giá tầm 10 tỷ thôi nhé"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "nhà đất",
+            "entity": "estate_type"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "Hồ Tây",
+            "entity": "address"
+          },
+          {
+            "start": 46,
+            "end": 50,
+            "value": "4 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "mình muốn mua nhà đất khu vực Hồ Tây, giá tầm 4 tỷ thôi"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "căn hộ",
+            "entity": "estate_type"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "value": "Phạm Hùng",
+            "entity": "address"
+          }
+        ],
+        "text": "mình định mua một căn hộ gần Phạm Hùng"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 27,
+            "end": 38,
+            "value": "đại cồ việt",
+            "entity": "address"
+          }
+        ],
+        "text": "mình muốn mua chung cư gần đại cồ việt"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "value": "ngã tư sở",
+            "entity": "address"
+          }
+        ],
+        "text": "mình muốn mua chung cư ở gần ngã tư sở"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 14,
+            "end": 30,
+            "value": "biệt thự liền kề",
+            "entity": "estate_type"
+          },
+          {
+            "start": 42,
+            "end": 47,
+            "value": "20 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "mình muốn mua biệt thự liền kề giá khoảng 20 tỷ"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "800tr",
+            "entity": "cost"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "Hà Nội",
+            "entity": "address"
+          }
+        ],
+        "text": "tao muốn mua chung cư 800tr ở Hà Nội"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "value": "Hà Đông",
+            "entity": "address"
+          },
+          {
+            "start": 44,
+            "end": 50,
+            "value": "4-5 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "cho hỏi có chung cư nào khu Hà Đông giá tầm 4-5 tỷ không?"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 28,
+            "end": 39,
+            "value": "Đại cồ việt",
+            "entity": "address"
+          },
+          {
+            "start": 51,
+            "end": 55,
+            "value": "6 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "có căn chung cư nào gần khu Đại cồ việt giá khoảng 6 tỷ không ad?"
+      },
+      {
+        "intent": "buy_house",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "bách khoa",
+            "entity": "estate_type"
+          }
+        ],
+        "text": "tao muốn mua nhà khu bách khoa"
+      },
+      {
+        "intent": "buy_house",
+        "text": "mình mua nhà"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "chung cư",
+            "entity": "estate_type"
+          }
+        ],
+        "text": "mình định thuê chung cư"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 32,
+            "end": 44,
+            "value": "hồ hoàn kiếm",
+            "entity": "address"
+          }
+        ],
+        "text": "mình muốn thuê chung cư khu vực hồ hoàn kiếm"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 28,
+            "end": 36,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 45,
+            "end": 53,
+            "value": "cầu giấy",
+            "entity": "address"
+          }
+        ],
+        "text": "cho mình hỏi có ai cho thuê chung cư khu vực cầu giấy không vậy?"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "nhà trọ",
+            "entity": "estate_type"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "value": "3tr",
+            "entity": "cost"
+          },
+          {
+            "start": 43,
+            "end": 52,
+            "value": "Bách Khoa",
+            "entity": "address"
+          }
+        ],
+        "text": "mình muốn thuê nhà trọ tầm giá 3tr gần khu Bách Khoa"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "nhà riêng",
+            "entity": "estate_type"
+          },
+          {
+            "start": 37,
+            "end": 50,
+            "value": "trần duy hưng",
+            "entity": "address"
+          },
+          {
+            "start": 62,
+            "end": 65,
+            "value": "5tr",
+            "entity": "cost"
+          }
+        ],
+        "text": "mình muốn thuê nhà riêng tại khu vực trần duy hưng giá khoảng 5tr"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "chung cư",
+            "entity": "estate_type"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "value": "8tr",
+            "entity": "cost"
+          }
+        ],
+        "text": "mình muốn thuê chung cư ngân sách tầm 8tr"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "phòng trọ",
+            "entity": "estate_type"
+          },
+          {
+            "start": 29,
+            "end": 39,
+            "value": "Thái thịnh",
+            "entity": "address"
+          }
+        ],
+        "text": "mình định thuê phòng trọ gần Thái thịnh"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "phòng trọ",
+            "entity": "estate_type"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "Bách Khoa",
+            "entity": "address"
+          }
+        ],
+        "text": "mình muốn thuê phòng trọ gần khu Bách Khoa"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "phòng trọ",
+            "entity": "estate_type"
+          },
+          {
+            "start": 26,
+            "end": 34,
+            "value": "cầu giấy",
+            "entity": "address"
+          }
+        ],
+        "text": "t muốn thuê phòng trọ khu cầu giấy"
+      },
+      {
+        "intent": "ren_house",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "ngã tư sở",
+            "entity": "address"
+          },
+          {
+            "start": 33,
+            "end": 43,
+            "value": "15tr/tháng",
+            "entity": "cost"
+          }
+        ],
+        "text": "mình muốn thuê nhà gần ngã tư sở 15tr/tháng"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "10 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "khoảng 10 tỷ"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "2-3 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "tầm 2-3 tỷ"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "8-9 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "giá tầm 8-9 tỷ nhé"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 11,
+            "end": 20,
+            "value": "9tr/tháng",
+            "entity": "cost"
+          }
+        ],
+        "text": "giá khoảng 9tr/tháng"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "3 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "ngân sách khoảng 3 tỷ"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "5tr",
+            "entity": "cost"
+          }
+        ],
+        "text": "giá khoảng 5tr thôi"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "1.5-2 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "1.5-2 tỷ"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "2 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "khoảng 2 tỷ đồng"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "9 tỷ",
+            "entity": "cost"
+          }
+        ],
+        "text": "giá tầm 9 tỷ thôi"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "3tr/tháng",
+            "entity": "cost"
+          }
+        ],
+        "text": "khoảng 3tr/tháng"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 4,
+            "end": 13,
+            "value": "3tr/tháng",
+            "entity": "cost"
+          }
+        ],
+        "text": "tầm 3tr/tháng"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "3tr",
+            "entity": "cost"
+          }
+        ],
+        "text": "3tr/tháng thôi"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "4tr",
+            "entity": "cost"
+          }
+        ],
+        "text": "4tr/tháng nhé"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "2.5tr/tháng",
+            "entity": "cost"
+          }
+        ],
+        "text": "giá tầm 2.5tr/tháng thôi"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "6tr",
+            "entity": "cost"
+          }
+        ],
+        "text": "giá tầm 6tr thôi"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "4tr",
+            "entity": "cost"
+          }
+        ],
+        "text": "giá 4tr một tháng thôi"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "4 tr",
+            "entity": "cost"
+          }
+        ],
+        "text": "thế giá khoảng 4 tr có ko?"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "3tr",
+            "entity": "cost"
+          }
+        ],
+        "text": "tầm 3tr một tháng"
+      },
+      {
+        "intent": "info_price",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "6000 tỉ",
+            "entity": "cost"
+          }
+        ],
+        "text": "6000 tỉ"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 22,
+            "end": 34,
+            "value": "trường chinh",
+            "entity": "address"
+          }
+        ],
+        "text": "mình định mua gần khu trường chinh"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "phạm hùng",
+            "entity": "address"
+          }
+        ],
+        "text": "đoạn phạm hùng ấy"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "phố Huế",
+            "entity": "address"
+          }
+        ],
+        "text": "gần phố Huế nhé"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 4,
+            "end": 15,
+            "value": "đại cồ việt",
+            "entity": "address"
+          }
+        ],
+        "text": "gần đại cồ việt"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "cầu giấy",
+            "entity": "address"
+          }
+        ],
+        "text": "khu cầu giấy nhé"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "phố cổ",
+            "entity": "address"
+          }
+        ],
+        "text": "khu gần phố cổ nhé"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 10,
+            "end": 20,
+            "value": "Thanh Xuân",
+            "entity": "address"
+          }
+        ],
+        "text": "quanh khu Thanh Xuân thôi"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "Đống Đa",
+            "entity": "address"
+          }
+        ],
+        "text": "quanh Đống Đa thôi"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 4,
+            "end": 13,
+            "value": "long biên",
+            "entity": "address"
+          }
+        ],
+        "text": "khu long biên"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "nhà đất",
+            "entity": "estate_type"
+          }
+        ],
+        "text": "loại nhà đất ấy"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "hà nội",
+            "entity": "address"
+          }
+        ],
+        "text": "hà nội"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Hà Nội",
+            "entity": "address"
+          }
+        ],
+        "text": "Hà Nội"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Nam Từ Liêm",
+            "entity": "address"
+          }
+        ],
+        "text": "Nam Từ Liêm"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "cầu giấy",
+            "entity": "address"
+          }
+        ],
+        "text": "cầu giấy"
+      },
+      {
+        "intent": "info_location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Nam từ Liềm",
+            "entity": "address"
+          }
+        ],
+        "text": "Nam từ Liềm"
+      },
+      {
+        "intent": "info_estate_type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "chung cư",
+            "entity": "estate_type"
+          }
+        ],
+        "text": "chung cư nhé"
+      },
+      {
+        "intent": "info_estate_type",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "biệt thự",
+            "entity": "estate_type"
+          }
+        ],
+        "text": "loại biệt thự bạn ạ"
+      },
+      {
+        "intent": "info_estate_type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "nhà đất",
+            "entity": "estate_type"
+          }
+        ],
+        "text": "nhà đất"
+      },
+      {
+        "intent": "info_estate_type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "nhà đất",
+            "entity": "estate_type"
+          }
+        ],
+        "text": "nhà đất nhé"
+      },
+      {
+        "intent": "info_estate_type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "phòng trọ",
+            "entity": "estate_type"
+          }
+        ],
+        "text": "phòng trọ"
+      },
+      {
+        "intent": "info_estate_type",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "thổ cư",
+            "entity": "estate_type"
+          }
+        ],
+        "text": "nhà thổ cư ấy"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
